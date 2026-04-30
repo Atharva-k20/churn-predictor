@@ -1,0 +1,18 @@
+# Customer Churn Predictor with Explainability
+
+Predicts customer churn using XGBoost with SHAP explanations via Flask API.
+
+## Results
+- ROC-AUC: 0.84
+- F1 Score (churn class): 0.71
+
+## Tech Stack
+XGBoost · SHAP · Flask · Scikit-learn · Pandas
+
+## How to Run
+pip install -r requirements.txt
+python app.py
+
+## API Usage
+POST /predict
+{"tenure": 2, "MonthlyCharges": 80}
